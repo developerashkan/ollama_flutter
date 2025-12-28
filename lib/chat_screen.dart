@@ -31,7 +31,10 @@ class _ChatScreenState extends State<ChatScreen> {
         print('Sending request to Ollama...');
       }
 
-      final response = await http.post(Uri.parse("http://10.0.2.2:11434/api/chat"), headers: {"Content-Type": "application/json"}, body: json.encode(data)).timeout(Duration(seconds: 30));
+      final response =
+      //Android Emulator: http://10.0.2.2:11434
+      await http.post(Uri.parse("http://10.0.2.2:11434/api/chat"),
+          headers: {"Content-Type": "application/json"}, body: json.encode(data)).timeout(Duration(seconds: 30));
 
       if (kDebugMode) {
         print('Response status: ${response.statusCode}');
