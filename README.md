@@ -6,8 +6,7 @@
        width="360" />
 </p>
 
-A modern Flutter chat UI for local Ollama AI models. Built for speed, privacy, and ease of use.
-
+A modern Flutter chat UI for local Ollama AI models, powered by BLoC state management for scalable, high-performance, privacy-first AI interactions.
 ## 🚀 Quick Start
 
 ### Prerequisites
