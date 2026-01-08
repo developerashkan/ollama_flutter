@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:ollama_flutter/chat_bloc.dart';
 import 'package:ollama_flutter/chat_screen.dart';
 
 void main() {
@@ -14,12 +16,16 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Ollama Local Chat',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue, brightness: Brightness.light),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.deepPurple,
+          brightness: Brightness.light,
+        ),
         useMaterial3: true,
       ),
-      home: const ChatScreen(),
+      home: BlocProvider(
+        create: (context) => ChatBloc(),
+        child: const ChatScreen(),
+      ),
     );
   }
 }
-
-
