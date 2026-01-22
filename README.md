@@ -1,4 +1,4 @@
-# Ollama Local Chat - Flutte
+# Ollama Local Chat - Flutter
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6c559b0e-0d8c-4438-befb-8b36447f68a8"
