@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ollama_flutter/chat_bloc.dart';
 import 'package:ollama_flutter/chat_screen.dart';
 
+
 void main() {
   runApp(const MyApp());
 }
