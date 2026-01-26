@@ -17,4 +17,4 @@ A modern Flutter chat UI for local Ollama AI models, powered by BLoC state manag
 
 **1. Start Ollama**
 ```bash
-ollama serv
+ollama serve
